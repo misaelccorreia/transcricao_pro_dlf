@@ -1,0 +1,105 @@
+{
+  "proposta": {
+    "escopo": [
+      {
+        "modulo": "app_mobile",
+        "prioridade": "desejavel",
+        "linha": 7
+      },
+      {
+        "modulo": "carrinho",
+        "prioridade": "obrigatorio",
+        "linha": 3
+      },
+      {
+        "modulo": "loja",
+        "prioridade": "obrigatorio",
+        "linha": 3
+      },
+      {
+        "modulo": "pagamento",
+        "prioridade": "obrigatorio",
+        "linha": 5
+      }
+    ],
+    "fora_do_escopo": [],
+    "perguntas_pendentes": [
+      "hospedagem",
+      "identidade_visual",
+      "orcamento",
+      "suporte",
+      "usuarios"
+    ],
+    "prazo_semanas": 8,
+    "preco_centavos": {
+      "essencial": 3915000,
+      "recomendado": 6760000,
+      "completo": 6760000
+    }
+  },
+  "cronograma": {
+    "modulos": [
+      {
+        "modulo": "login",
+        "inicio": 1,
+        "fim": 1
+      },
+      {
+        "modulo": "loja",
+        "inicio": 2,
+        "fim": 4
+      },
+      {
+        "modulo": "carrinho",
+        "inicio": 5,
+        "fim": 6
+      },
+      {
+        "modulo": "pagamento",
+        "inicio": 7,
+        "fim": 8
+      },
+      {
+        "modulo": "app_mobile",
+        "inicio": 9,
+        "fim": 12
+      }
+    ],
+    "total_semanas": 12,
+    "estoura_prazo": true
+  },
+  "riscos": {
+    "ids": [
+      "decisao_pendente",
+      "prazo_estourado"
+    ],
+    "horas_contingencia": 32,
+    "preco_recomendado_centavos": 7185000
+  },
+  "pagamento": {
+    "forma": "parcelado",
+    "valor_total_centavos": 7185000,
+    "parcelas": [
+      {
+        "tipo": "entrada",
+        "semana": 0,
+        "valor_centavos": 1796250
+      },
+      {
+        "tipo": "parcela",
+        "semana": 4,
+        "valor_centavos": 1796250
+      },
+      {
+        "tipo": "parcela",
+        "semana": 8,
+        "valor_centavos": 1796250
+      },
+      {
+        "tipo": "parcela",
+        "semana": 12,
+        "valor_centavos": 1796250
+      }
+    ]
+  }
+}
