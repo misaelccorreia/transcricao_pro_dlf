@@ -1,0 +1,33 @@
+[001] Agência (Léo): Bom dia! Contem um pouco sobre a loja de vocês.
+[002] Cliente (Carla): Somos uma marca de cosméticos e vendemos só pelo Instagram.
+[003] Cliente (Carla): Precisamos de uma loja virtual com vitrine dos produtos.
+[004] Agência (Léo): E o carrinho com checkout?
+[005] Cliente (Diego): O carrinho tem que ter cupom de desconto.
+[006] Agência (Léo): Pagamento por pix e cartão?
+[007] Cliente (Carla): Pix seria bom, boleto não precisa.
+[008] Agência (Léo): Sem pagamento online a loja fica incompleta.
+[009] Cliente (Carla): Verdade, então o pagamento precisa entrar.
+[010] Agência (Léo): Vocês controlam o estoque como hoje?
+[011] Cliente (Diego): Hoje o estoque fica numa planilha, gostaria de integrar com o sistema antigo.
+[012] Cliente (Diego): O controle de estoque seria bom se sobrar tempo.
+[013] Agência (Léo): Recomendo também um blog para atrair clientes.
+[014] Cliente (Carla): Gostei.
+[015] Agência (Léo): E um app?
+[016] Cliente (Carla): App não quero agora.
+[017] Cliente (Diego): Mas o chat pode tirar, ninguém usa.
+[018] Agência (Léo): Quantos clientes por dia vocês atendem?
+[019] Cliente (Carla): Uns 300 clientes por dia no Instagram.
+[020] Agência (Léo): E a hospedagem?
+[021] Cliente (Diego): Hospedagem não decidimos ainda, mas servidor próprio a gente não tem.
+[022] Agência (Léo): E o orçamento?
+[023] Cliente (Carla): O orçamento vou ver com o banco.
+[024] Agência (Léo): Qual o prazo?
+[025] Cliente (Carla): Queremos lançar em três meses.
+[026] Cliente (Diego): Na verdade a Black Friday é em 10 semanas, então dez semanas.
+[027] Cliente (Carla): Os dados de CPF dos clientes ficam com a gente?
+[028] Agência (Léo): Ficam sim. Sobre suporte, querem manutenção mensal?
+[029] Cliente (Diego): Manutenção a gente vê depois.
+[030] Agência (Léo): Normalmente pedimos 40% de entrada e o resto em 2 parcelas.
+[031] Cliente (Carla): Prefiro pagar à vista.
+[032] Cliente (Diego): Melhor, faz em 6 parcelas com entrada de 10%.
+[033] Cliente (Carla): Fechado. Obrigada!

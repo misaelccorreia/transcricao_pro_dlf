@@ -1,0 +1,7 @@
+[
+  {"id":"dados_sensiveis","sinais":["cpf","lgpd"],"horas":{"dev":10,"qa":6}},
+  {"id":"integracao_legada","modulo":"estoque","sinais":["sistema antigo"],"horas":{"dev":20,"qa":8}},
+  {"id":"migracao_dados","sinais":["planilha"],"horas":{"dev":12,"qa":4}},
+  {"id":"prazo_estourado","gatilho":"estoura_prazo","horas":{"dev":16,"qa":8}},
+  {"id":"terceiro_envolvido","modulo":"chat","sinais":["meu sócio"],"horas":{"dev":6}}
+]
