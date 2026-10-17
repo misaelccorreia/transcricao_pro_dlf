@@ -67,4 +67,63 @@ describe('caso extra', () => {
       ],
     });
   });
+
+  // exemplo-7: o cliente termina em dúvida sobre o app. As regras não têm "dúvida":
+  // L25 não tem frase-chave e L26 é pergunta, então o app segue desejável (L7) e entra no recomendado.
+  // L16 e L18 são uma oração só cada, com "não decidimos" / "não sei": orçamento e hospedagem pendentes.
+  // Essencial = exemplo-6: 3.915.000. Recomendado + app: 492 h ≥ 270, 6.120.000 × 1,2 × 0,92 = 6.756.480 → 6.760.000.
+  it('exemplo-7 · proposta', () => {
+    expect(out('exemplo-7').proposta).toEqual({
+      escopo: [
+        { modulo: 'app_mobile', prioridade: 'desejavel', linha: 7 },
+        { modulo: 'carrinho', prioridade: 'obrigatorio', linha: 3 },
+        { modulo: 'loja', prioridade: 'obrigatorio', linha: 3 },
+        { modulo: 'pagamento', prioridade: 'obrigatorio', linha: 5 },
+      ],
+      fora_do_escopo: [],
+      perguntas_pendentes: ['hospedagem', 'identidade_visual', 'orcamento', 'suporte', 'usuarios'],
+      prazo_semanas: 8,
+      preco_centavos: { essencial: 3915000, recomendado: 6760000, completo: 6760000 },
+    });
+  });
+
+  // App (grupo 2) espera os obrigatórios. Duração do app: max(⌈150/45⌉, ⌈40/12⌉, ⌈40/10⌉) = 4.
+  it('exemplo-7 · cronograma', () => {
+    expect(out('exemplo-7').cronograma).toEqual({
+      modulos: [
+        { modulo: 'login', inicio: 1, fim: 1 },
+        { modulo: 'loja', inicio: 2, fim: 4 },
+        { modulo: 'carrinho', inicio: 5, fim: 6 },
+        { modulo: 'pagamento', inicio: 7, fim: 8 },
+        { modulo: 'app_mobile', inicio: 9, fim: 12 },
+      ],
+      total_semanas: 12,
+      estoura_prazo: true,
+    });
+  });
+
+  // "sócio" (L10) e o prazo estourado. 6.508.000 × 1,2 × 0,92 = 7.184.832 → 7.185.000.
+  it('exemplo-7 · riscos', () => {
+    expect(out('exemplo-7').riscos).toEqual({
+      ids: ['decisao_pendente', 'prazo_estourado'],
+      horas_contingencia: 32,
+      preco_recomendado_centavos: 7185000,
+    });
+  });
+
+  // L22 "à vista" e depois L23 "4 parcelas": a condição sobre o app se perde. Entrada padrão 25% = 1.796.250.
+  // Resto 5.388.750 ÷ 4 = 1.347.187 < 1.500.000 → n = 3, parcelas de 1.796.250.
+  // m = 5: posições 2, 4 e 5 → semanas 4, 8 e 12.
+  it('exemplo-7 · pagamento', () => {
+    expect(out('exemplo-7').pagamento).toEqual({
+      forma: 'parcelado',
+      valor_total_centavos: 7185000,
+      parcelas: [
+        { tipo: 'entrada', semana: 0, valor_centavos: 1796250 },
+        { tipo: 'parcela', semana: 4, valor_centavos: 1796250 },
+        { tipo: 'parcela', semana: 8, valor_centavos: 1796250 },
+        { tipo: 'parcela', semana: 12, valor_centavos: 1796250 },
+      ],
+    });
+  });
 });

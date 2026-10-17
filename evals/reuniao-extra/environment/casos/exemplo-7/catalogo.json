@@ -1,0 +1,10 @@
+{
+  "app_mobile": { "horas": {"dev": 150, "design": 40, "qa": 40}, "sinonimos": ["app", "aplicativo"] },
+  "blog": { "horas": {"dev": 16, "design": 10, "qa": 4}, "sinonimos": ["blog", "artigos"] },
+  "carrinho": { "horas": {"dev": 40, "qa": 12}, "sinonimos": ["carrinho", "checkout"], "requer": ["loja"] },
+  "chat": { "horas": {"dev": 30, "design": 6, "qa": 8}, "sinonimos": ["chat", "atendimento online"] },
+  "estoque": { "horas": {"dev": 50, "qa": 10}, "sinonimos": ["estoque", "inventário"] },
+  "login": { "horas": {"dev": 20, "design": 6, "qa": 6}, "sinonimos": ["login", "acesso", "senha"] },
+  "loja": { "horas": {"dev": 80, "design": 30, "qa": 20}, "sinonimos": ["loja", "catálogo de produtos", "vitrine"], "requer": ["login"] },
+  "pagamento": { "horas": {"dev": 36, "qa": 12}, "sinonimos": ["pagamento", "pix", "boleto"], "requer": ["carrinho"] }
+}

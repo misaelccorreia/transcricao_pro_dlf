@@ -1,0 +1,27 @@
+[001] Agência (Bia): Boa tarde, Rodrigo. Qual é a ideia do projeto?
+[002] Cliente (Rodrigo): Temos um pet shop e queremos vender ração pela internet.
+[003] Cliente (Rodrigo): Precisamos de uma loja virtual com carrinho.
+[004] Agência (Bia): E o pagamento online?
+[005] Cliente (Rodrigo): Pix precisa ter.
+[006] Agência (Bia): Vocês pensam num app também?
+[007] Cliente (Rodrigo): Gostaria de um app para os clientes recomprarem ração.
+[008] Agência (Bia): O app sozinho praticamente dobra o investimento.
+[009] Cliente (Rodrigo): Nossa, não imaginava.
+[010] Cliente (Rodrigo): Essa parte quem decide é meu sócio, ele está viajando.
+[011] Agência (Bia): E o estoque, integra com algum sistema?
+[012] Cliente (Rodrigo): O estoque hoje é num caderno, mas isso fica para depois.
+[013] Agência (Bia): Qual o prazo?
+[014] Cliente (Rodrigo): Uns dois meses.
+[015] Agência (Bia): E o orçamento?
+[016] Cliente (Rodrigo): O orçamento depende do app e não decidimos ainda.
+[017] Agência (Bia): Hospedagem vocês já têm?
+[018] Cliente (Rodrigo): Não sei o que é melhor entre nuvem e servidor próprio.
+[019] Agência (Bia): Quer que eu mande a proposta com e sem o app?
+[020] Cliente (Rodrigo): Pode ser.
+[021] Agência (Bia): Como vocês preferem pagar?
+[022] Cliente (Rodrigo): Se for sem o app, à vista.
+[023] Cliente (Rodrigo): Com o app, talvez em 4 parcelas.
+[024] Agência (Bia): Então fechamos o escopo hoje?
+[025] Cliente (Rodrigo): Sinceramente, não sei se o app vale a pena.
+[026] Cliente (Rodrigo): Vocês acham que o app precisa entrar agora?
+[027] Agência (Bia): Mando as duas versões e vocês decidem.
