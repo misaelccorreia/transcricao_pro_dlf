@@ -37,5 +37,5 @@ for (const caso of casos) {
   try { r = JSON.parse(readFileSync(arquivo, 'utf8')); } catch (err) { erros.push(`${arquivo} não é JSON válido: ${err.message}`); continue; }
   checa(caso, r);
 }
-if (erros.length) { console.error(erros.join('\n')); process.exit(1); }
-console.log(`ok: ${casos.length} caso(s) com saída válida`);
+if (erros.length) { console.error(`O 86 encontrou problemas:\n${erros.join('\n')}`); process.exit(1); }
+console.log(`ok: ${casos.length} caso(s) com saída válida · o 86 conferiu tudo`);

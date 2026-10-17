@@ -299,8 +299,10 @@ const nomes = process.argv.slice(2).length
   ? process.argv.slice(2)
   : readdirSync(casosDir, { withFileTypes: true }).filter((d) => d.isDirectory()).map((d) => d.name).sort();
 mkdirSync(outDir, { recursive: true });
+console.log(`O 86 está analisando ${nomes.length} reunião(ões)...`);
 for (const caso of nomes) {
   const res = resolve(join(casosDir, caso));
   writeFileSync(join(outDir, `${caso}.json`), JSON.stringify(res, null, 2) + '\n');
-  console.log(`ok: ${outDir}/${caso}.json`);
+  console.log(`ok: ${outDir}/${caso}.json · proposta montada`);
 }
+console.log('O 86 terminou a análise. Próximo passo: checar a saída.');

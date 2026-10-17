@@ -3,7 +3,7 @@ name: meu-problema
 description: Reunião de descoberta → proposta (proposta, cronograma, riscos, pagamento). Um script determinístico implementa as regras 1–37 do README.md e escreve out/<caso>.json.
 ---
 
-# Reunião → proposta (P: reuniao-proposta)
+# Agente 86 · reunião → proposta (P: reuniao-proposta)
 
 As 37 regras do `README.md` do workspace são todas mecânicas. Elas já estão implementadas em `solve.mjs`, nesta
 pasta. **Não calcule nada à mão**: rode o script.
